@@ -48,18 +48,18 @@ spec:
             - name: PODINFO_UI_COLOR
               value: "#34577c"
           securityContext:
-            capabilities:
-              drop:
-                - ALL
+            # capabilities:
+            #   drop:
+            #     - ALL
             privileged: true
-            seLinuxOptions: {}
-            runAsUser: 1001
-            runAsGroup: 1001
-            runAsNonRoot: true
-            readOnlyRootFilesystem: true
-            allowPrivilegeEscalation: false
-            seccompProfile:
-              type: RuntimeDefault
+            # seLinuxOptions: {}
+            # runAsUser: 1001
+            # runAsGroup: 1001
+            # runAsNonRoot: true
+            # readOnlyRootFilesystem: true
+            # allowPrivilegeEscalation: false
+            # seccompProfile:
+            #   type: RuntimeDefault
           livenessProbe:
             exec:
               command:
